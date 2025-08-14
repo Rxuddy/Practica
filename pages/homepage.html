@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Rauddy >_<</a>
+
+        <nav class="navbar">
+            <a href="homepage.html" class="active"> HOME</a>
+            <a href="aboutme.html" > ABOUT ME</a>
+            <a href="btecl2.html" > BTEC L2</a>
+            <a href="hobbies.html" > HOBBIES</a>
+            <a href="experience.html" > EXPERIENCE</a>
+            <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">UNITS</a>
+            <li class="dropdown-content">
+                <a href="unit6.html">Unit 6</a>
+                <a href="unit9.html">Unit 9</a>
+                <a href="unit12.html">Unit 12</a>
+                </li>
+            </div>
+        </nav>
+        <div class="dark-mode"></div>
+        <button onclick="myFunction()"> Dark mode </button>
+
+        </div>
+    </header>
+    
+<!--hOME SECTION-->
+    <sectiopn class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Rauddy Geres</h1>
+            <h3> Student and Future Developer</h3>
+            <p> Welcome to my Digital Portfolio Website. 
+                Here you'll find information about me, both <span>professionally and personally</span>. 
+                In the About Me section, you'll find more information. 
+                I hope you have a good time browsing this website.
+            </p>
+            <div class="btn-box">
+                <a href="file:///C:/Users/raudd/OneDrive/Documents/Rauddy%20Geres%20-%20CV.pdf" >Download CV</a>
+                <a href="#" >Contact Me!</a>
+            </div>
+        </div>
+
+            <div class="home-sci">
+                <a href="#"><i class='bx bx-envelope' ></i></a>
+                <a href="https://www.instagram.com/xrauddyx?igsh=bXhra2xpNXJrajFw&utm_source=qr"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+        <div class="home-img">
+            <img src="../images/rauimg.jpg" alt="Rauddy Geres" >
+        </div>
+
+        <span class="home-imgHover"></span>
+    </section>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+    }
+    </script>
+</body>
+</html>

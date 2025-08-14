@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.content{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25%;
+    flex-direction: column;
+    font-size: 10px;
+    gap: 10px;
+}
+
+
+.content-text{
+    max-width: 1000px;
+    align-items: center;
+    display: contents;
+}
+
+.content-text a {
+    text-decoration: none;
+    padding: 12px;
+    position: relative;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.2;
+    background: linear-gradient(to right, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-position: 0;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: move 3s linear alternate infinite;
+    text-transform: uppercase;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0;
+    }
+    60% {
+        background-position: 250px;
+    }
+    100% {
+        background-position: 450px;
+    }
+}
+
+
+
+.boton{   
+        background: black;
+        cursor: pointer;
+        border: none;
+        padding: 16px 32px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        position: relative;
+        border-radius: 12px;
+
+}
+
+.boton a {
+        text-decoration: none;
+        color: white;
+}
+
+
+.boton:hover {
+        color: #081b29;
+        transition: 0.5s;
+        background: transparent;
+        border: 2px solid #ffffff;
+}
+        
+.boton::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+        background-size: 800%;
+        border-radius: 10px;
+        filter: blur(8px);
+        animation: glowing 20s linear infinite;
+        }
+
+        @keyframes glowing {
+        0% {
+        background-position: 0 0;
+        }
+        50% {
+        background-position: 400% 0;
+        }
+        100% {
+        background-position: 0 0;
+        }
+}
+
